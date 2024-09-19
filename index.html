@@ -8,23 +8,29 @@
   <base href="/">
 
   <style>
-    :root,
-    html,
-    body {
+    :root, html, body {
       margin: 0;
       padding: 0;
       font-family: sans-serif;
       background-color: #ededed;
     }
+
     polaris-chip {
       margin: 16px;
     }
+
+    my-card {
+      margin: 8px;
+    }
   </style>
+
+
   <title>polaris-chip / my-card</title>
 </head>
 
 <body>
   <h1>polaris-chip</h1>
+
   <!-- this is going to do whatever the tag's defaults are -->
   <polaris-chip title="News of Record" link="https://psu.edu/" shiny ></polaris-chip>
   <polaris-chip title="Faculty and Staff" link="https://hax.psu.edu"></polaris-chip>
@@ -32,7 +38,38 @@
   <polaris-chip title="Grants and donations" link=""></polaris-chip>
 
   <h1>my-card</h1>
-  <my-card></my-card>
+
+
+  <my-card title="Penn State" background="#D3D3D3" buttonColor="#007BFF"
+  description="This link thats you to the Penn State website" 
+  image="https://brand.psu.edu/images/backgrounds/veritcal-1-mark_registered.png"
+  link="https://psu.edu/"></my-card>
+
+
+  <my-card title="West Chester" background="#D3D3D3" buttonColor="#512d6d"
+  description="This link thats you to the West Chester website" 
+  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUwszy6gsczUhClC1CfYzNKoxBTDhIvEiNww&s"
+  link="https://www.wcupa.edu"></my-card>
+
+
+  <my-card title="Bloomsburg" background="#D3D3D3" buttonColor="#6F263D"
+  description="This link thats you to the Bloomsburg website" 
+  image="https://buhuskies.com/common/controls/image_handler.aspx?thumb_prefix=medium&image_path=/images/2012/1/10/DOG-HEAD_RGP.jpg"
+  link="https://www.commonwealthu.edu/campus-life/bloomsburg"></my-card>
+
+
+  <my-card title="Harvard" background="#D3D3D3" buttonColor="#A51C30"
+  description="This link thats you to the Harvard website" 
+  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREO4iniSZ4V19SbGl1k_wV0bd7osC49MLS-w&s" 
+  link="https://www.harvard.edu" ></my-card>
+
+
+  <my-card title="Yale" background="#D3D3D3" buttonColor="#00356b"
+  description="This link thats you to the Yale website" 
+  image="https://i.pinimg.com/736x/20/33/58/203358e5a19d1567ab83bc612ae1a61f.jpg"
+  link="https://www.yale.edu" ></my-card>
+  
+
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
