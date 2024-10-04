@@ -39,6 +39,20 @@
 
   <h1>my-card</h1>
 
+  <!--Question Card-->
+  <my-card fancy
+  title="Questionnaire" 
+  background="#D3D3D3" 
+  buttonColor="#00356b">
+  <multiple-choice randomize typeof="oer:Assessment" resource="#6400762a-2b00-60d6-9410-db72d033c61a" prefix="oer:http://oerschema.org/ schema:http://schema.org/ dc:http://purl.org/dc/terms/ foaf:http://xmlns.com/foaf/0.1/ cc:http://creativecommons.org/ns# bib:http://bib.schema.org " correct-text="Let's go VGK!" incorrect-text="NOOOoooo!!!" check-label="Check answer" reset-label="Reset" correct-icon="icons:thumb-up" incorrect-icon="icons:thumb-down" quiz-name="default" question="Who last won the NHL Stanley Cup?" single-option max-attempts="0">
+  <input type="checkbox" value="Seattle Kraken" role="textbox">
+  <input type="checkbox" value="Vegas Golden Knights">
+  <input type="checkbox" value="Florida Panthers" correct="correct">
+  <input type="checkbox" value="Edmonton Oilers">
+  </multiple-choice>
+  
+  </my-card>
+
   <!--Penn State-->
   <my-card fancy 
   title="Penn State" 
@@ -99,6 +113,8 @@
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
   <script type="module" src="./src/my-card.js"></script>
+  <script type="module" src="https://cdn.hax.cloud/cdn/build/es6/node_modules/@haxtheweb/multiple-choice/lib/true-false-question.js"></script>
+  <script type="module" src="https://cdn.hax.cloud/cdn/build/es6/node_modules/@haxtheweb/multiple-choice/multiple-choice.js"></script>
 </body>
 
 </html>
